@@ -46,7 +46,7 @@
 <body>
 	<div class="header">
 		<div class="am-g">
-			<h2>恒达时讯移动开发部App管理系统</h2>
+			<h2>抽抽网站管理系统</h2>
 			<p>v1.1.0</p>
 		</div>
 		<br>

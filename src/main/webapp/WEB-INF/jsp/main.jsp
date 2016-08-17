@@ -32,7 +32,7 @@
 <body>
 	<header class="am-topbar admin-header am-topbar-inverse">
 	<div class="am-topbar-brand">
-		<p class="am-text-lg">恒达时讯移动开发部APP管理系统</p>
+		<p class="am-text-lg">抽抽网站管理系统</p>
 	</div>
 
 	<button
@@ -46,7 +46,7 @@
 			class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
 			<li class="am-dropdown" data-am-dropdown><a
 				class="am-dropdown-toggle" data-am-dropdown-toggle
-				href="javascript:;"> <span class="am-icon-user"></span>梁铖成 <span
+				href="javascript:;"> <span class="am-icon-user"></span>梁铖城 <span
 					class="am-icon-caret-down"></span>
 			</a>
 				<ul class="am-dropdown-content">
@@ -63,22 +63,33 @@
 		<!-- sidebar start -->
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
-
 				<ul class="am-list admin-sidebar-list">
-					<li><a
-						href="<?php echo $base_url; ?>admin/version_list/<?php echo $appid; ?>"
-						class="am-cf"><span class="am-icon-list-ol"></span> 版本列表</a></li>
-					<li><a href="javascript:;" class="am-cf"
-						data-am-modal="{target: '#my-alert'}"><span
-							class="am-icon-download"></span> 下载地址</a></li>
-					<li><a
-						href="<?php echo $base_url; ?>export/down_app_qrcode/<?php echo $appid; ?>"
-						class="am-cf" target="_blank"><span class="am-icon-qrcode"></span>
-							下载二维码</a></li>
-					<li><a
-						href="<?php echo $base_url; ?>export/version?appid=<?php echo $appid; ?>&lang=0"
-						class="am-cf" target="_blank"><span class="am-icon-cube"></span>
-							APP接口</a></li>
+					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+							首页</a></li>
+					<li class="admin-parent"><a class="am-cf"
+						data-am-collapse="{target: '#collapse-nav'}"><span
+							class="am-icon-file"></span> 页面模块 <span
+							class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in"
+							id="collapse-nav">
+							<li><a href="admin-user.html" class="am-cf"><span
+									class="am-icon-check"></span> 个人资料<span
+									class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
+							<li><a href="admin-help.html"><span
+									class="am-icon-puzzle-piece"></span> 帮助页</a></li>
+							<li><a href="admin-gallery.html"><span
+									class="am-icon-th"></span> 相册页面<span
+									class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
+							<li><a href="admin-log.html"><span
+									class="am-icon-calendar"></span> 系统日志</a></li>
+							<li><a href="admin-404.html"><span class="am-icon-bug"></span>
+									404</a></li>
+						</ul></li>
+					<li><a href="admin-table.html"><span class="am-icon-table"></span>
+							表格</a></li>
+					<li><a href="admin-form.html"><span
+							class="am-icon-pencil-square-o"></span> 表单</a></li>
+					<li><a href="#"><span class="am-icon-sign-out"></span> 注销</a></li>
 				</ul>
 
 				<div class="am-panel am-panel-default admin-sidebar-panel">
@@ -86,16 +97,21 @@
 						<p>
 							<span class="am-icon-bookmark"></span> 公告
 						</p>
-						<p>1:确保上传文件的正确性</p>
-						<p>2:确保版本号的正确性</p>
-						<p>3:升级完成请手动校验</p>
+						<p>时光静好，与君语；细水流年，与君同。—— Amaze UI</p>
 					</div>
 				</div>
 
+				<div class="am-panel am-panel-default admin-sidebar-panel">
+					<div class="am-panel-bd">
+						<p>
+							<span class="am-icon-tag"></span> wiki
+						</p>
+						<p>Welcome to the Amaze UI wiki!</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- sidebar end -->
-
 		<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
 			<div class="am-modal-dialog">
 				<div class="am-modal-hd">复制下面的地址</div>
