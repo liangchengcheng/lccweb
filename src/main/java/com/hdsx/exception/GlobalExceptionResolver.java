@@ -13,7 +13,26 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
+/**
+ * 错误信息的统一处理
+ * @author lcc
+ *
+ */
 @Component
-public class GlobalExceptionResolver {
+public class GlobalExceptionResolver implements HandlerExceptionResolver{
 
+	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
+	
+	@ResponseBody
+	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
+			Exception ex) {
+		//在这里其实有2种选择
+		//跳转到定制化的错误页面或者返回json信息
+		//ModelAndView error= new ModelAndView("error");
+		//error.addObject("exMsg",ex.getMessage());
+		//error.addObject("exType",ex.getClass().getSimpleName().replace("\"", "'"));
+		
+		return null;
+	}
+	
 }
