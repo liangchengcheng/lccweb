@@ -15,7 +15,11 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+/**
+ * 
+ * @author lcc
+ *
+ */
 @Controller
 public class CodeController {
 	private int width = 90;// 定义图片的width
